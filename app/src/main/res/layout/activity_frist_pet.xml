@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="94dp"
+            android:layout_height="89dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/nuevoTextView"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteY="84dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primera mascota"
+            android:id="@+id/nuevoTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="24dp"/>
+
+
+        <EditText
+            android:id="@+id/etNombreMascota"
+            style="@style/MyEditTextStyle"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nuevoTextView"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="45dp"/>
+
+        <EditText
+            android:id="@+id/etTipoMascota"
+            style="@style/MyEditTextStyle"
+            android:hint="Tipo"
+            android:background="@drawable/bg_border"
+            android:inputType="textPassword"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNombreMascota"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="45dp"/>
+
+        <EditText
+            android:id="@+id/etRaza"
+            style="@style/MyEditTextStyle"
+            android:hint="Raza"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:background="@drawable/bg_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTipoMascota"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="45dp"/>
+
+        <EditText
+            android:id="@+id/etTamanyo"
+            style="@style/MyEditTextStyle"
+            android:hint="Tamaño (S, M, L, XL...)"
+            android:inputType="text"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRaza"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="45dp"/>
+
+        <EditText
+            android:id="@+id/etGenero"
+            style="@style/MyEditTextStyle"
+            android:hint="Genero"
+            android:inputType="text"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etTamanyo"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginStart="45dp"/>
+
+        <EditText
+            android:id="@+id/etFechaNacimientoMascota"
+            style="@style/MyEditTextStyle"
+            android:layout_height="30dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_border"
+            android:hint="Fecha naciemiento"
+            android:inputType="date"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etGenero" />
+
+        <ImageView
+            android:id="@+id/imgFotoMascota"
+            style="@style/MyEditTextStyle"
+            android:layout_width="109dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_cirecle"
+            android:hint="Foto"
+            android:inputType="date"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFechaNacimientoMascota" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnFinalizar"
+            app:layout_constraintTop_toBottomOf="@+id/imgFotoMascota"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_default="wrap"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            app:layout_constraintStart_toEndOf="@+id/btnVolver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgFotoMascota"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintWidth_default="wrap"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/btnImgGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgFotoMascota"
+            app:layout_constraintTop_toBottomOf="@+id/etFechaNacimientoMascota"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:id="@+id/btnImgCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="36dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgFotoMascota"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnImgGallery"
+            app:layout_constraintTop_toBottomOf="@+id/btnImgGallery"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Imágen: "
+            app:layout_constraintBottom_toTopOf="@+id/btnVolver"
+            app:layout_constraintEnd_toStartOf="@+id/imgFotoMascota"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFechaNacimientoMascota"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

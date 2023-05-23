@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602344661333",
+    "project_id": "goodguysapp-f114d",
+    "storage_bucket": "goodguysapp-f114d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602344661333:android:cbcac6ace9eb2d0eff4fdc",
+        "android_client_info": {
+          "package_name": "com.example.goodguys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602344661333-lpqbg0j1n7phhh43fd94t4n2jcv8sdms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9TCkMVwhO9-PgyCes4nE6JrdMbKheHcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602344661333-lpqbg0j1n7phhh43fd94t4n2jcv8sdms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

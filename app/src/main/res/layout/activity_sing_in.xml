@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="94dp"
+        android:layout_height="89dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nuevoTextView"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo usuario"
+
+        android:id="@+id/nuevoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nuevoTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Email"
+        android:inputType="text"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Contraseña"
+        android:background="@drawable/bg_border"
+        android:inputType="textPassword"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Nombre"
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:background="@drawable/bg_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"/>
+
+    <EditText
+        android:id="@+id/firstSurnameEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Primer Apellido"
+        android:inputType="text"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"/>
+
+    <EditText
+        android:id="@+id/secondSurnameEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Segungo Apellido"
+        android:inputType="text"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstSurnameEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"/>
+    <EditText
+        android:id="@+id/directionEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Direccion"
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:background="@drawable/bg_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondSurnameEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"/>
+    <EditText
+        android:id="@+id/bornDateEditText"
+        style="@style/MyEditTextStyle"
+        android:hint="Fecha naciemiento"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/directionEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:inputType="date"
+        android:maxLines="1"/>
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSiguiente"
+        app:layout_constraintTop_toBottomOf="@+id/bornDateEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_default="wrap"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        app:layout_constraintStart_toEndOf="@+id/btnVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bornDateEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_default="wrap"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
